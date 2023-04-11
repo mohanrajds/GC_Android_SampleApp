@@ -6,25 +6,28 @@
         <EditTextPreference
             app:key="domain"
             app:title="@string/domain"
+            app:icon="@drawable/baseline_domain_24"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             app:key="orgId"
             app:title="@string/org_id"
+            app:icon="@drawable/baseline_123_24"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             app:key="widgetId"
+            app:icon="@drawable/baseline_123_24"
             app:title="@string/widget_id"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
 
 
     <PreferenceCategory
-        app:icon="@drawable/baseline_color_lens_24"
         app:title="@string/theme">
 
         <ListPreference
+            app:icon="@drawable/baseline_color_lens_24"
             app:defaultValue="system"
             app:entries="@array/theme_entries"
             app:entryValues="@array/theme_values"
@@ -37,6 +40,7 @@
     <PreferenceCategory app:title="@string/logger">
         <SwitchPreferenceCompat
             app:key="log"
+            app:icon="@drawable/log_24"
             app:title="@string/enable_logger" />
     </PreferenceCategory>
 
@@ -56,6 +60,7 @@
     <PreferenceCategory app:title="Clear Data">
         <Preference
             app:key="clear_db"
+            app:icon="@drawable/baseline_clear_all_24"
             app:summary="To clear all database and files store internally"
             app:title="Clear Database" />
     </PreferenceCategory>
@@ -64,6 +69,7 @@
     <PreferenceCategory app:title="Developer Document">
         <Preference
             app:key="dev_doc"
+            app:icon="@drawable/baseline_code_24"
             app:summary="To Check our Developer Document"
             app:title="Developer Document">
             <intent
