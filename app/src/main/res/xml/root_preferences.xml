@@ -1,0 +1,74 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/widget_details">
+
+        <EditTextPreference
+            app:key="domain"
+            app:title="@string/domain"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="orgId"
+            app:title="@string/org_id"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="widgetId"
+            app:title="@string/widget_id"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        app:icon="@drawable/baseline_color_lens_24"
+        app:title="@string/theme">
+
+        <ListPreference
+            app:defaultValue="system"
+            app:entries="@array/theme_entries"
+            app:entryValues="@array/theme_values"
+            app:key="theme"
+            app:title="@string/theme"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory app:title="@string/logger">
+        <SwitchPreferenceCompat
+            app:key="log"
+            app:title="@string/enable_logger" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory app:title="Session Variable">
+        <Preference
+            app:key="set_session_variable"
+            app:summary="To set Session Variables"
+            app:title="Set Session Variables" />
+        <Preference
+            app:key="update_session_variable"
+            app:summary="To Update Session Variables"
+            app:title="Update Session Variables" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory app:title="Clear Data">
+        <Preference
+            app:key="clear_db"
+            app:summary="To clear all database and files store internally"
+            app:title="Clear Database" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory app:title="Developer Document">
+        <Preference
+            app:key="dev_doc"
+            app:summary="To Check our Developer Document"
+            app:title="Developer Document">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://help.zoho.com/portal/en/kb/desk/developer-space/guided-conversations/android/articles/working-with-the-zoho-gc-sdk-for-android" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

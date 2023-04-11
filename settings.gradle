@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "http://build.csez.zohocorpin.com/zoho_android/gc_android/webhost/GC_as_Service/Apr_07_2023_4/"
+            allowInsecureProtocol true
+        }
+        maven {
+            url "https://downloads.zohocdn.com/wmslibrary"
+        }
+        maven { url 'https://maven.zohodl.com/' }
+    }
+}
+rootProject.name = "GCSampleApp"
+include ':app'
